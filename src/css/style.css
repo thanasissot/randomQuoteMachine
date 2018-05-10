@@ -11,6 +11,9 @@ ul {
   margin-bottom: 20px;
   margin-top: 0; }
 
+a {
+  color: inherit; }
+
 li {
   display: inline-block; }
 
@@ -57,5 +60,5 @@ span {
   font-size: 0.8em;
   display: block;
   position: fixed;
-  margin-top: 15.5%;
+  margin-top: 266px;
   padding-left: 8px; }
