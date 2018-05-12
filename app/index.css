@@ -1,0 +1,41 @@
+.col-6 {
+  background-color: #fff;
+  margin-top: 15%;
+  min-width: 570px;
+  min-height: 100px;
+  padding: 15px;
+  font-family: monospace;
+  font-weight: 800;
+  border-radius: 4px;
+  font-size: 1.3em;
+  padding-bottom: 2px;
+  transition: height 1s;
+}
+
+#tweet {
+  color: #fff;
+}
+
+.notmain {
+  height: 40px;
+  margin-bottom: 0;
+}
+
+body {
+  backface-visibility: hidden;
+}
+
+span, a, button {
+  display: inline-block;
+}
+
+a {
+  font-size: 0.7em;
+}
+
+button {
+  border: none;
+  color: #fff;
+  height: 36px;
+  text-align: center;
+}
