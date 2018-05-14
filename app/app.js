@@ -1,8 +1,8 @@
-const url = 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1'
+const url = 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1?';
 
 const app = angular.module('mainApp', []);
 
-let mainController = function($scope, $http){
+let mainController = function($scope, $http, $templateCache){
   $scope.quote = {};
 
   function success(data){
@@ -15,11 +15,10 @@ let mainController = function($scope, $http){
   }
 
   $scope.getQuote = function(){
-    $http.get(url).then(success, error);
+    let a = new Date().getTime();
+    $http.get(url + a).then(success, error);
   }
 
 }
 
 app.controller('mainController', ['$scope', '$http', mainController]);
-
-// $(document).css(backgroundColor: 'red');
