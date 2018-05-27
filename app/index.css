@@ -1,41 +1,72 @@
-.col-6 {
-  background-color: #fff;
-  margin-top: 15%;
-  min-width: 570px;
-  min-height: 100px;
-  padding: 15px;
-  font-family: monospace;
-  font-weight: 800;
-  border-radius: 4px;
-  font-size: 1.3em;
-  padding-bottom: 2px;
-  transition: height 1s;
+body, html {
+    height: 100%;
+    transition: height 1s;
+    transition: opacity 1s;
+    backface-visibility: hidden;
 }
-
-#tweet {
-  color: #fff;
-}
-
-.notmain {
-  height: 40px;
-  margin-bottom: 0;
-}
-
 body {
+  font-family: 'Anton', sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-top: 10%;
   backface-visibility: hidden;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e4f5fc+0,bfe8f9+38,9fd8ef+54,2ab0ed+89 */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e4f5fc+0,bfe8f9+38,9fd8ef+54,2ab0ed+89 */
+  background: #e4f5fc; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #e4f5fc 0%, #bfe8f9 38%, #9fd8ef 54%, #2ab0ed 89%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #e4f5fc 0%,#bfe8f9 38%,#9fd8ef 54%,#2ab0ed 89%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #e4f5fc 0%,#bfe8f9 38%,#9fd8ef 54%,#2ab0ed 89%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f5fc', endColorstr='#2ab0ed',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background-repeat: no-repeat;
+}
+
+.fa-quote-left {
+  font-size: 2em;
+}
+
+#target {
+  opacity: 0;
+  font-size: 1.5em;
+  padding: 20px;
+  min-height: 240px;
+  min-width: 130px;
+  max-width: 540px;
+  margin: auto auto auto auto;
+  border-radius: 8px;
+  background: #fff;
+  transition: opacity 2s;
 }
 
 span, a, button {
   display: inline-block;
 }
 
-a {
+div a {
   font-size: 0.7em;
 }
 
-button {
-  border: none;
-  color: #fff;
-  height: 36px;
-  text-align: center;
+#button {
+  color: #fff !important;
+  background: #2ab0ed !important;
+}
+
+#tweet {
+  color: #2ab0ed;
+}
+#quote {
+  min-height: 215px;
+}
+#quote, #title {
+  opacity: 1;
+  transition: opacity 1.2s;
+}
+
+.showMe {
+  opacity: 1 !important;
+  transition: opacity 1.2s;
+}
+
+.hideMe {
+  opacity: 0 !important;
+  transition: opacity 1.5s;
 }

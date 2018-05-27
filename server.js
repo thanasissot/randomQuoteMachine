@@ -3,7 +3,6 @@ const server = express();
 
 server.use(express.static(__dirname + '/app'));
 
-
 server.get('*', (req, res) => {
     res.sendFile(__dirname + '/index.html');
 })
